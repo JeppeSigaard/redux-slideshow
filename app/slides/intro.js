@@ -5,7 +5,12 @@ class Slide extends Component {
   render() {
     return (
       <div className="slide-content">
-        <img src="/assets/img/redux-logo.png" alt="" width="500" />
+        <img
+          style={{ marginTop: "100px" }}
+          src="/assets/img/redux-logo.png"
+          alt=""
+          width="500"
+        />
       </div>
     );
   }
