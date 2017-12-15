@@ -8,6 +8,7 @@
 }
 
 .slide-container {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -16,6 +17,7 @@
   font-size: 1.6rem;
 
   .slide {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;

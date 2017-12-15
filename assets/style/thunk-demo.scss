@@ -16,5 +16,11 @@
     &:hover {
       background: #5a7;
     }
+
+    &.disabled,
+    &.disabled:hover {
+      cursor: default;
+      background: #5b8;
+    }
   }
 }
