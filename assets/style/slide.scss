@@ -1,0 +1,140 @@
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1.6rem;
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    animation: fadeInSlide 1 forwards 250ms;
+  }
+
+  .slide-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-weight: 900;
+    margin: 10px;
+    white-space: nowrap;
+  }
+
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  ul.fadein-list li {
+    opacity: 0;
+    animation: fadeIn 400ms 1 forwards;
+    &:nth-child(2) {
+      animation-delay: 200ms;
+    }
+    &:nth-child(3) {
+      animation-delay: 400ms;
+    }
+    &:nth-child(4) {
+      animation-delay: 600ms;
+    }
+    &:nth-child(5) {
+      animation-delay: 800ms;
+    }
+    &:nth-child(6) {
+      animation-delay: 1000ms;
+    }
+    &:nth-child(7) {
+      animation-delay: 1200ms;
+    }
+    &:nth-child(8) {
+      animation-delay: 1400ms;
+    }
+  }
+
+  pre {
+    line-height: 1.7;
+  }
+}
+
+.black-box {
+  color: white;
+  background: #123;
+  padding: 20px 30px;
+  border-radius: 2px;
+}
+
+.console {
+  color: white;
+  background: #123;
+  border-radius: 2px;
+
+  .console-header {
+    height: 24px;
+    background: #ddd;
+    padding: 4px;
+  }
+
+  .console-btn {
+    display: inline-block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 16px;
+    margin-left: 4px;
+    color: #333;
+
+    &.yellow {
+      background: #fe3;
+    }
+    &.red {
+      background: #f66;
+    }
+  }
+
+  .console-body {
+    padding: 20px 30px;
+  }
+
+  &.minimize {
+    width: 200px;
+
+    .console-body {
+      display: none;
+    }
+  }
+
+  &.close {
+    display: none;
+  }
+}

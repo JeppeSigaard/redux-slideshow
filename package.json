@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Redux slideshow about Redux",
   "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeppeSigaard/redux-slideshow"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "opn http://localhost:8080 && node server.js"
   },
   "author": "Jeppe Sigaard",
   "license": "ISC",

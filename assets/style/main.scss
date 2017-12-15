@@ -1,6 +1,22 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@import "slide";
+@import "counter";
+@import "login-app";
+@import "thunk-demo";
+
 body {
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  background: #f0f0f0;
   box-sizing: border-box;
   * {
     box-sizing: inherit;
