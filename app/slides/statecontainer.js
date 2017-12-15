@@ -6,7 +6,7 @@ class Slide extends Component {
     const slide = this.props.slide;
     return (
       <div className="slide-content">
-        <h2>Redux is a...</h2>
+        <h2>Redux is a</h2>
         {slide === 4 && <h1>Predictable state container</h1>}
         {slide === 5 && <h1>Reliable state container?</h1>}
         {slide > 5 && (
