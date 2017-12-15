@@ -34,7 +34,7 @@ class Slide extends Component {
           </div>
         )}
         {slide === 15 && (
-          <div>
+          <div style={{ width: "640px" }}>
             <h1>redux-thunk</h1>
             <p>
               Allows multiple, asynchronous dispatches, with access to
@@ -46,7 +46,7 @@ class Slide extends Component {
                 {async.state === "pending" && "Thunking..."}
                 {async.state === "complete" && "Re-do a redux-thunk"}
               </a>
-              <div className="black-box" style={{ width: "600px" }}>
+              <div className="black-box" style={{ width: "640px" }}>
                 <pre>Status: {async.state}</pre>
                 <pre>Message: {async.msg}</pre>
               </div>
